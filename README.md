@@ -43,14 +43,4 @@
     ```
 5. Access the crm page at `sitename.localhost:8000/crm` in your web browser.
 
-## Need help?
 
-Join our [telegram group](https://t.me/frappecrm) for instant help.
-
-## Documentation
-
-Check out the [official documentation](https://docs.frappe.io/crm) for more details.
-
-## License
-
-[GNU Affero General Public License v3.0](LICENSE)
