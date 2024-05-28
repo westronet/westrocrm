@@ -16,7 +16,7 @@
       </TextInput>
       <div
         v-if="filteredTemplates.length"
-        class="mt-2 grid max-h-[560px] grid-cols-3 gap-2 overflow-y-auto"
+        class="mt-2 grid max-h-[560px] sm:grid-cols-3 gris-cols-1 gap-2 overflow-y-auto"
       >
         <div
           v-for="template in filteredTemplates"
@@ -31,7 +31,14 @@
             {{ __('Subject: {0}', [template.subject]) }}
           </div>
           <TextEditor
-            v-if="template.response"
+            v-if="template.use_html && template.response_html"
+            :content="template.response_html"
+            :editable="false"
+            editor-class="!prose-sm max-w-none !text-sm text-gray-600 focus:outline-none"
+            class="flex-1 overflow-hidden"
+          />
+          <TextEditor
+            v-else-if="template.response"
             :content="template.response"
             :editable="false"
             editor-class="!prose-sm max-w-none !text-sm text-gray-600 focus:outline-none"
@@ -97,9 +104,11 @@ const templates = createListResource({
   fields: [
     'name',
     'enabled',
+    'use_html',
     'reference_doctype',
     'subject',
     'response',
+    'response_html',
     'modified',
     'owner',
   ],

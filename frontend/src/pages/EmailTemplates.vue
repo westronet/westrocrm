@@ -43,6 +43,8 @@
     @updatePageCount="(count) => (updatedPageCount = count)"
     @showEmailTemplate="showEmailTemplate"
     @applyFilter="(data) => viewControls.applyFilter(data)"
+    @applyLikeFilter="(data) => viewControls.applyLikeFilter(data)"
+    @likeDoc="(data) => viewControls.likeDoc(data)"
   />
   <div
     v-else-if="emailTemplates.data"
@@ -112,8 +114,10 @@ const showEmailTemplateModal = ref(false)
 const emailTemplate = ref({
   subject: '',
   response: '',
+  response_html: '',
   name: '',
   enabled: 1,
+  use_html: 0,
   owner: '',
   reference_doctype: 'CRM Deal',
 })
@@ -123,8 +127,10 @@ function showEmailTemplate(name) {
   emailTemplate.value = {
     subject: et.subject,
     response: et.response,
+    response_html: et.response_html,
     name: et.name,
     enabled: et.enabled,
+    use_html: et.use_html,
     owner: et.owner,
     reference_doctype: et.reference_doctype,
   }
