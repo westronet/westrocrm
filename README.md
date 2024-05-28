@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="https://frappe.io/products/crm">
+    <a href="https://optimoerp.net">
         <img width="1402" alt="Screenshot 2022-09-18 at 9 16 08 PM" src=".github/screenshots/MainDealPage.png">
     </a>
 </div>
@@ -67,9 +67,9 @@ If you prefer self-hosting, follow the official [Frappe Bench Installation](http
 ### Local Setup
 
 1. [Install Bench](https://github.com/frappe/bench).
-2. Install Frappe CRM app:
+2. Install Wesro CRM app:
     ```sh
-    $ bench get-app crm
+    $ bench get-app https://github.com/westronet/westrocrm
     ```
 3. Create a site with the crm app:
     ```sh
@@ -81,14 +81,3 @@ If you prefer self-hosting, follow the official [Frappe Bench Installation](http
     ```
 5. Access the crm page at `sitename.localhost:8000/crm` in your web browser.
 
-## Need help?
-
-Join our [telegram group](https://t.me/frappecrm) for instant help.
-
-## Documentation
-
-Check out the [official documentation](https://docs.frappe.io/crm) for more details.
-
-## License
-
-[GNU Affero General Public License v3.0](LICENSE)

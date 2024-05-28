@@ -3,7 +3,7 @@
     <div class="mt-32 w-full px-4">
       <CRMLogo class="mx-auto h-10" />
       <div class="mt-6 flex items-center justify-center space-x-1.5">
-        <span class="text-3xl font-semibold text-gray-900">Login to CRM</span>
+        <span class="text-3xl font-semibold text-gray-900">Login to WestroCRM</span>
       </div>
       <div class="mx-auto mt-6 w-full px-4 sm:w-96">
         <form

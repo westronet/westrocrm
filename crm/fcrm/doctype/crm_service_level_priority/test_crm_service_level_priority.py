@@ -1,4 +1,4 @@
-# Copyright (c) 2023, Frappe Technologies Pvt. Ltd. and Contributors
+# Copyright (c) 2023, Westrnet Inc. and Contributors
 # See license.txt
 
 # import frappe
